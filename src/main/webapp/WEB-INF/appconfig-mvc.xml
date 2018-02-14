@@ -6,13 +6,6 @@
 
     <mvc:annotation-driven/>
 
-    <mvc:resources mapping="/resources/**" location="/resources/"/>
-
-    <!-- **************************************************************** -->
-    <!--  THYMELEAF-SPECIFIC ARTIFACTS                                    -->
-    <!--  TemplateResolver <- TemplateEngine <- ViewResolver              -->
-    <!-- **************************************************************** -->
-
     <bean id="templateResolver"
           class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
         <property name="prefix" value="/WEB-INF/views/" />
